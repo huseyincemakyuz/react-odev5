@@ -1,14 +1,17 @@
 import React from 'react'
 
-import {ExampleComponent, Button} from 'bordeux'
+import { Button } from 'bordeux'
 import 'bordeux/dist/index.css'
+
 
 const App = () => {
   return (
     <>
-      <ExampleComponent text="Merhaba Dünya😄" />
-      <Button text='Click' onclick={() => alert('adsada')}/>
-
+      <Button type="default" text="default" />
+      <Button type="primary" text="primary" />
+      <Button type="text" text="text" />
+      <Button type="link" text="link" />
+      <Button type="dashed" text="dashed" />
     </>
   )
 }
